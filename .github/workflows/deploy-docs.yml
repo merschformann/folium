@@ -45,10 +45,14 @@ jobs:
         make clean html linkcheck
         popd
 
-    - name: Update switcher and latest version
+    - name: Update switcher.json and latest version
       if: ${{ github.event_name == 'release' }}
       run: |
-        python docs/update_switcher.py --version ${{ github.ref_name }}
+        URL="https://python-visualization.github.io/folium/${{ github.ref_name }}"
+        echo "Updating latest version to $URL"
+        jq '(.[] | select(.version == "latest") | .url) |= "'$URL'"' switcher.json | sponge switcher.json
+        echo "Adding ${{ github.ref_name }} entry to switcher.json at index 2 (right after latest)"
+        jq '.[2] |= . + {"version": "'${{ github.ref_name }}'", "url": "'$URL'"}' switcher.json | sponge switcher.json
 
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
