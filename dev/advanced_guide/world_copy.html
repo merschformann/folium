@@ -8,36 +8,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Scrolling beyond the world edge &#8212; Folium 0.1.dev1862+gad0f51d documentation</title>
+    <title>Scrolling beyond the world edge &#8212; Folium 0.1.dev1865+g012c7aa documentation</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=924e9346" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="../_static/documentation_options.js?v=64f90342"></script>
+    <script src="../_static/documentation_options.js?v=186361df"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -45,9 +45,9 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_guide/world_copy';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
-        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/latest/_static/switcher.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.3';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -63,27 +63,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -105,12 +101,17 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class="col-lg-3 navbar-header-items__start">
@@ -172,40 +173,40 @@ document.write(`
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../index.html">
-                        Home
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../getting_started.html">
-                        Getting started
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../user_guide.html">
-                        User guide
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../getting_started.html">
+    Getting started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../advanced_guide.html">
-                        Advanced guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../reference.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../user_guide.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="../advanced_guide.html">
+    Advanced guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../reference.html">
+    API reference
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -277,9 +278,9 @@ document.write(`
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
@@ -300,46 +301,49 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item">
+          
+          
+            <div class="navbar-item">
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../index.html">
-                        Home
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../getting_started.html">
-                        Getting started
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../user_guide.html">
-                        User guide
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../getting_started.html">
+    Getting started
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../advanced_guide.html">
-                        Advanced guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../reference.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../user_guide.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="../advanced_guide.html">
+    Advanced guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../reference.html">
+    API reference
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -410,13 +414,13 @@ document.write(`
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -425,7 +429,7 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -506,7 +510,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_c435aec9cd1c76f07ba3488c5f007ae1 {
+                #map_5c5407faf6ae4c49f6d31fe94f900f29 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -520,14 +524,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_c435aec9cd1c76f07ba3488c5f007ae1&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5c5407faf6ae4c49f6d31fe94f900f29&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_c435aec9cd1c76f07ba3488c5f007ae1 = L.map(
-                &quot;map_c435aec9cd1c76f07ba3488c5f007ae1&quot;,
+            var map_5c5407faf6ae4c49f6d31fe94f900f29 = L.map(
+                &quot;map_5c5407faf6ae4c49f6d31fe94f900f29&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -542,31 +546,31 @@ document.write(`
 
 
 
-            var tile_layer_191ed1a05a68ef93eed82f6ca46427be = L.tileLayer(
+            var tile_layer_a8de6724f93a8759c54a7b18602712fb = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_191ed1a05a68ef93eed82f6ca46427be.addTo(map_c435aec9cd1c76f07ba3488c5f007ae1);
+            tile_layer_a8de6724f93a8759c54a7b18602712fb.addTo(map_5c5407faf6ae4c49f6d31fe94f900f29);
 
 
-            var marker_68482d6f99f66cb4778141aae9a9771b = L.marker(
+            var marker_5f1bcefa23af9ec575bb982dd3af6f26 = L.marker(
                 [0.0, 0.0],
                 {}
-            ).addTo(map_c435aec9cd1c76f07ba3488c5f007ae1);
+            ).addTo(map_5c5407faf6ae4c49f6d31fe94f900f29);
 
 
-        var popup_d6d280eeb2ddca4864dc76e8e3e744fa = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_e22c5ea8050b41c25ab4a93e999890f5 = $(`&lt;div id=&quot;html_e22c5ea8050b41c25ab4a93e999890f5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I will disappear when moved outside the  map domain.&lt;/div&gt;`)[0];
-                popup_d6d280eeb2ddca4864dc76e8e3e744fa.setContent(html_e22c5ea8050b41c25ab4a93e999890f5);
+        var popup_3d53439b10775fd7474e129706d26232 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        marker_68482d6f99f66cb4778141aae9a9771b.bindPopup(popup_d6d280eeb2ddca4864dc76e8e3e744fa)
+                var html_9a1662060a470668abfe8451aaa79500 = $(`&lt;div id=&quot;html_9a1662060a470668abfe8451aaa79500&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I will disappear when moved outside the  map domain.&lt;/div&gt;`)[0];
+                popup_3d53439b10775fd7474e129706d26232.setContent(html_9a1662060a470668abfe8451aaa79500);
+
+
+
+        marker_5f1bcefa23af9ec575bb982dd3af6f26.bindPopup(popup_3d53439b10775fd7474e129706d26232)
         ;
 
 
@@ -624,7 +628,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7b24b5939020e91c57ed8390b6b09a98 {
+                #map_a097d57e503734681226adb535fc2c3e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -638,14 +642,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7b24b5939020e91c57ed8390b6b09a98&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a097d57e503734681226adb535fc2c3e&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7b24b5939020e91c57ed8390b6b09a98 = L.map(
-                &quot;map_7b24b5939020e91c57ed8390b6b09a98&quot;,
+            var map_a097d57e503734681226adb535fc2c3e = L.map(
+                &quot;map_a097d57e503734681226adb535fc2c3e&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -660,31 +664,31 @@ document.write(`
 
 
 
-            var tile_layer_120030f853c491bce6e456d9b4fdb471 = L.tileLayer(
+            var tile_layer_caff68f62fc63a57c174da97611fb13c = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_120030f853c491bce6e456d9b4fdb471.addTo(map_7b24b5939020e91c57ed8390b6b09a98);
+            tile_layer_caff68f62fc63a57c174da97611fb13c.addTo(map_a097d57e503734681226adb535fc2c3e);
 
 
-            var marker_88fef5654c07c70accb2b22d681b2129 = L.marker(
+            var marker_a74b2ee24be17d70f80f4c1ea0b0c895 = L.marker(
                 [0.0, 0.0],
                 {}
-            ).addTo(map_7b24b5939020e91c57ed8390b6b09a98);
+            ).addTo(map_a097d57e503734681226adb535fc2c3e);
 
 
-        var popup_2fcfeb11a818e685b5ebf888b0752233 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_92818248b1fa3d3c0faf63e34e0b2340 = $(`&lt;div id=&quot;html_92818248b1fa3d3c0faf63e34e0b2340&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I will magically reappear when moved outside the map domain.&lt;/div&gt;`)[0];
-                popup_2fcfeb11a818e685b5ebf888b0752233.setContent(html_92818248b1fa3d3c0faf63e34e0b2340);
+        var popup_8c12da8d6b221220d0aa62a639aab7d4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        marker_88fef5654c07c70accb2b22d681b2129.bindPopup(popup_2fcfeb11a818e685b5ebf888b0752233)
+                var html_579e1e01701bbedb2c933cc80665ec71 = $(`&lt;div id=&quot;html_579e1e01701bbedb2c933cc80665ec71&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I will magically reappear when moved outside the map domain.&lt;/div&gt;`)[0];
+                popup_8c12da8d6b221220d0aa62a639aab7d4.setContent(html_579e1e01701bbedb2c933cc80665ec71);
+
+
+
+        marker_a74b2ee24be17d70f80f4c1ea0b0c895.bindPopup(popup_8c12da8d6b221220d0aa62a639aab7d4)
         ;
 
 
@@ -741,7 +745,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_333beb00c77dfc6a5afe94d6e974f6b3 {
+                #map_f13170c04cc4d98211aef8144e0a1f71 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -755,14 +759,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_333beb00c77dfc6a5afe94d6e974f6b3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_f13170c04cc4d98211aef8144e0a1f71&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_333beb00c77dfc6a5afe94d6e974f6b3 = L.map(
-                &quot;map_333beb00c77dfc6a5afe94d6e974f6b3&quot;,
+            var map_f13170c04cc4d98211aef8144e0a1f71 = L.map(
+                &quot;map_f13170c04cc4d98211aef8144e0a1f71&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -776,31 +780,31 @@ document.write(`
 
 
 
-            var tile_layer_a76f40922d13f389d5852f460d1e899e = L.tileLayer(
+            var tile_layer_d0275c833d430ed4aa93507f8e66cf4a = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: true, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_a76f40922d13f389d5852f460d1e899e.addTo(map_333beb00c77dfc6a5afe94d6e974f6b3);
+            tile_layer_d0275c833d430ed4aa93507f8e66cf4a.addTo(map_f13170c04cc4d98211aef8144e0a1f71);
 
 
-            var marker_7e621f620e7056e28c1ea9cbc76dde02 = L.marker(
+            var marker_21ebfe325073c8d38f126351bf7fce1f = L.marker(
                 [0.0, 0.0],
                 {}
-            ).addTo(map_333beb00c77dfc6a5afe94d6e974f6b3);
+            ).addTo(map_f13170c04cc4d98211aef8144e0a1f71);
 
 
-        var popup_bf8da4949bb629f310f311caaf849b3c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_c71aa0bb2630faa69603e9ed22df6aa8 = $(`&lt;div id=&quot;html_c71aa0bb2630faa69603e9ed22df6aa8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;The map domain here is not wrapped.&lt;/div&gt;`)[0];
-                popup_bf8da4949bb629f310f311caaf849b3c.setContent(html_c71aa0bb2630faa69603e9ed22df6aa8);
+        var popup_c0cc21cb27a583bcabbf680606bd0402 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        marker_7e621f620e7056e28c1ea9cbc76dde02.bindPopup(popup_bf8da4949bb629f310f311caaf849b3c)
+                var html_cad99f5c4f58eb98f2d90104cde37ca8 = $(`&lt;div id=&quot;html_cad99f5c4f58eb98f2d90104cde37ca8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;The map domain here is not wrapped.&lt;/div&gt;`)[0];
+                popup_c0cc21cb27a583bcabbf680606bd0402.setContent(html_cad99f5c4f58eb98f2d90104cde37ca8);
+
+
+
+        marker_21ebfe325073c8d38f126351bf7fce1f.bindPopup(popup_c0cc21cb27a583bcabbf680606bd0402)
         ;
 
 
@@ -818,7 +822,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -885,8 +889,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -894,7 +898,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1862+gad0f51d</div>
+Folium version 0.1.dev1865+g012c7aa</div>
       
         <div class="footer-item">
 
@@ -916,7 +920,7 @@ Folium version 0.1.dev1862+gad0f51d</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
 </p></div>
       
     </div>
@@ -927,7 +931,7 @@ Folium version 0.1.dev1862+gad0f51d</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
 </p></div>
       
     </div>
